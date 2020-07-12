@@ -533,3 +533,22 @@ body {
     border-right: none;
 }
 /* End Nav */
+/* Start from page */
+.reqwest .from-border {
+    position: relative;
+    border: 1px solid var(--gray);
+}
+
+.reqwest .from-border label {
+    position: absolute;
+    top: -15px;
+    background-color: #f1f1f1;
+    padding: 0 10px;
+    color: var(--mainColor);
+    font-size: 1.3em;
+}
+.reqwest .from-border input:focus,
+.reqwest .from-border select:focus,
+.reqwest .from-border textarea:focus {
+    outline: none;
+}
