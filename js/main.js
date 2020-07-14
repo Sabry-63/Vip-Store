@@ -26,4 +26,5 @@ $(function () {
 
 	$('#dtBasicExample').DataTable();
 	$('.dataTables_length').addClass('bs-select');
+	$('.dataTables_length').parent().parent().remove();
 });
