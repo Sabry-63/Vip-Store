@@ -20,9 +20,21 @@
     <header class="main-header font-size bg-main-color color-whait">
         <div class="container">
             <div class="page-wrapper chiller-theme toggledt">
-                <a id="show-sidebar" class="btn color-whait font-size" href="#">
-                    <i class="fas fa-bars"></i>
-                </a>
+                <div class="row">
+                    <div class="col-lg-4">
+                        <a id="show-sidebar" class="btn color-whait font-size" href="#">
+                            <i class="fas fa-bars"></i>
+                        </a>
+                    </div>
+                    <div class="col-lg-4 mt-3 mt-md-0">
+                        <form class="search-input my-3 border d-flex">
+                            <button class="btn btn-sm px-2 py-1 color-whait ">
+                                <i class="fa fa-search " aria-hidden="true"></i>
+                            </button>
+                            <input class="w-100 px-2" type="text" placeholder="بحث ....">
+                        </form>
+                    </div>
+                </div>
                 <div class="logo">
                     <img src="images/logo/e2fbd0a7-42a1-48c9-a3b4-6f73fdf9dedf.jpg" alt="">
                 </div>
@@ -119,10 +131,13 @@
                         <label>بيانات العميل</label>
                         <input class="w-100 border mt-3 p-2" type="text" placeholder="اسم العميل">
                         <input class="w-100 border mt-3 p-2" type="text" placeholder="رقم الموبايل">
-                        <select class="w-100 border mt-3 p-2">
-                            <option value="">دائم</option>
-                            <option value="">غير دائم</option>
-                        </select>
+                        <div class="d-flex align-items-center">
+                            <span class="w-25 bg-main-color color-whait text-center p-2 mt-3">العميل</span>
+                            <select class="w-100 border mt-3 p-2">
+                                <option value="">دائم</option>
+                                <option value="">غير دائم</option>
+                            </select>
+                        </div>
                     </form>
                     <form action="" class="from-border p-4 mb-5">
                         <label>صيانة الجهاز</label>
