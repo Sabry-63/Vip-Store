@@ -8,6 +8,8 @@
     <link rel="stylesheet" href="css/vandors/bootstrap.min-rtl.css">
     <!-- Fontawsome -->
     <link rel="stylesheet" href="css/vandors/all.min.css">
+    <!-- Datatables -->
+    <link rel="stylesheet" href="css/vandors/datatables.min.css">
     <!-- Mian-Style -->
     <link rel="stylesheet" href="css/style.css">
     <title>Index</title>
@@ -131,9 +133,14 @@
         <div class="container">
             <div class="table-responsive p-4 ">
                 <h4 class="mb-5">Title</h4>
+                <form action="" class="d-flex justify-content-center mb-4">
+                    <input class="w-25 border p-2 mx-2" type="date">
+                    <input class="w-25 border p-2 mx-2" type="date">
+                    <button class="btn border bg-main-color color-whait">Go</button>
+                </form>
                 <!-- ====================
                 Main Table -->
-                <table class="table">
+                <table id="dtBasicExample" class="table">
                     <thead>
                         <tr>
                             <th scope="col">#</th>
@@ -180,6 +187,8 @@
     <script src="js/vandors/jquery.js"></script>
     <!-- Bootstarp -->
     <script src="js/vandors/bootstrap.min.js"></script>
+    <!-- Datatables -->
+    <script src="js/vandors/datatables.min.js"></script>
     <!-- Main Script -->
     <script src="js/main.js"></script>
 </body>
