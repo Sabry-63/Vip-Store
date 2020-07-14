@@ -38,7 +38,11 @@ ul {
 input:focus,
 select:focus,
 textarea:focus {
-    outline: none;
+    outline: none !important;
+    box-shadow: none !important;
+}
+select option {
+    margin: 20px 0;
 }
 .click-pull {
     cursor: pointer;
