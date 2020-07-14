@@ -35,7 +35,11 @@ ul {
     padding: 0;
     margin: 0;
 }
-
+input:focus,
+select:focus,
+textarea:focus {
+    outline: none;
+}
 .click-pull {
     cursor: pointer;
 }
@@ -83,8 +87,8 @@ ul {
 header {
     background-color: var(--whait);
     position: relative;
-    height: 67px;
     box-shadow: 0 0 6px 0 var(--black);
+    min-height: 67px;
 }
 .logo {
     position: absolute;
@@ -546,9 +550,4 @@ body {
     padding: 0 10px;
     color: var(--mainColor);
     font-size: 1.3em;
-}
-.reqwest .from-border input:focus,
-.reqwest .from-border select:focus,
-.reqwest .from-border textarea:focus {
-    outline: none;
 }
