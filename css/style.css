@@ -7,7 +7,7 @@
 /*=========================
 1-Start Main Style */
 :root {
-    --mainColor: #009688;
+    --mainColor: #457b9d;
     --black: #000000;
     --whait: #ffffff;
     --gray: #bdc3c7;
@@ -35,7 +35,11 @@ ul {
     padding: 0;
     margin: 0;
 }
-
+input:focus,
+select:focus,
+textarea:focus {
+    outline: none;
+}
 .click-pull {
     cursor: pointer;
 }
@@ -83,8 +87,8 @@ ul {
 header {
     background-color: var(--whait);
     position: relative;
-    height: 67px;
     box-shadow: 0 0 6px 0 var(--black);
+    min-height: 67px;
 }
 .logo {
     position: absolute;
@@ -194,9 +198,7 @@ body {
     width: 35px;
     transition-delay: 0.3s;
 }
-#show-sidebar:hover {
-    color: var(--whait) !important;
-}
+
 /*----------------sidebar-wrapper----------------*/
 
 .sidebar-wrapper {
@@ -462,13 +464,14 @@ body {
 /*-----------------------------chiller-theme-------------------------------------------------*/
 
 .chiller-theme .sidebar-wrapper {
-    background: #31353d;
+    background: var(--mainColor);
+    box-shadow: 0 0 5px 0 var(--black);
 }
 
 .chiller-theme .sidebar-wrapper .sidebar-header,
 .chiller-theme .sidebar-wrapper .sidebar-search,
 .chiller-theme .sidebar-wrapper .sidebar-menu {
-    border-top: 1px solid #3a3f48;
+    border-top: 1px solid var(--gray);
 }
 
 .chiller-theme .sidebar-wrapper .sidebar-search input.search-menu,
@@ -484,7 +487,7 @@ body {
 .chiller-theme .sidebar-wrapper .sidebar-brand > a,
 .chiller-theme .sidebar-wrapper .sidebar-menu ul li a,
 .chiller-theme .sidebar-footer > a {
-    color: #818896;
+    color: var(--whait);
 }
 
 .page-wrapper.chiller-theme.toggled #close-sidebar {
@@ -492,7 +495,7 @@ body {
 }
 
 .page-wrapper.chiller-theme.toggled #close-sidebar:hover {
-    color: #ffffff;
+    color: var(--whait);
 }
 
 .chiller-theme .sidebar-wrapper ul li:hover a i,
@@ -533,48 +536,18 @@ body {
 .chiller-theme .sidebar-footer > a:last-child {
     border-right: none;
 }
-
 /* End Nav */
-
-/*=========================
-2-Start Main Header Style */
-.main-header .header-contanet {
-    justify-content: space-between;
-    align-items: center;
-}
-
-.main-header .list-nav {
-    position: fixed;
-    left: 0;
-    top: 0;
-    bottom: 0;
-    box-shadow: -2px 1px 10px 1px var(--mainColor);
-    opacity: 0;
-    z-index: 9;
-}
-.main-header .list-nav .link-nav {
+/* Start from page */
+.reqwest .from-border {
     position: relative;
-    z-index: 1;
-    padding: 10px 0;
+    border: 1px solid var(--gray);
 }
 
-.main-header .list-nav .list-item-nav .link-nav::before {
-    content: "";
+.reqwest .from-border label {
     position: absolute;
-    left: 0;
-    height: 3px;
-    display: block;
-    background-color: var(--whait);
-    z-index: -1;
-    bottom: 0;
-    width: 0%;
-    transition: width 0.4s;
+    top: -15px;
+    background-color: #f1f1f1;
+    padding: 0 10px;
+    color: var(--mainColor);
+    font-size: 1.3em;
 }
-.main-header .list-nav .list-item-nav:hover .link-nav::before {
-    width: 100%;
-}
-.main-header .list-nav .list-item-nav .link-nav:hover {
-    color: var(--whait);
-}
-/*=========================
-2-End Main Header Style */

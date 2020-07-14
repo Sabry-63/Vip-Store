@@ -1,0 +1,209 @@
+<!DOCTYPE html>
+<html dir="rtl">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <!-- Bootstrap -->
+    <link rel="stylesheet" href="css/vandors/bootstrap.min-rtl.css">
+    <!-- Fontawsome -->
+    <link rel="stylesheet" href="css/vandors/all.min.css">
+    <!-- Mian-Style -->
+    <link rel="stylesheet" href="css/style.css">
+    <title>Index</title>
+</head>
+
+<body>
+
+    <!-- ========================================================
+    Start Main Header-->
+    <header class="main-header font-size bg-main-color color-whait">
+        <div class="container">
+            <div class="page-wrapper chiller-theme toggledt">
+                <div class="row">
+                    <div class="col-lg-4">
+                        <a id="show-sidebar" class="btn color-whait font-size" href="#">
+                            <i class="fas fa-bars"></i>
+                        </a>
+                    </div>
+                    <div class="col-lg-4 mt-3 mt-md-0">
+                        <form class="search-input my-3 border d-flex">
+                            <button class="btn btn-sm px-2 py-1 color-whait ">
+                                <i class="fa fa-search " aria-hidden="true"></i>
+                            </button>
+                            <input class="w-100 px-2" type="text" placeholder="بحث ....">
+                        </form>
+                    </div>
+                </div>
+                <div class="logo">
+                    <img src="images/logo/e2fbd0a7-42a1-48c9-a3b4-6f73fdf9dedf.jpg" alt="">
+                </div>
+            </div>
+            <!-- Start Nav -->
+            <div class="page-wrapper chiller-theme ">
+                <nav id="sidebar" class="sidebar-wrapper">
+                    <div class="sidebar-content">
+                        <div class="sidebar-brand">
+                            <div id="close-sidebar">
+                                <i class="fas fa-times"></i>
+                            </div>
+                        </div>
+                        <!-- sidebar-search  -->
+                        <div class="sidebar-menu">
+                            <ul>
+                                <li>
+                                    <a href="#">
+                                        <i class="fa fa-home"></i>
+                                        <span>الرئيسية</span>
+                                    </a>
+                                </li>
+
+                                <li class="sidebar-dropdown">
+                                    <a href="#">
+                                        <i class="fa fa-tv"></i>
+                                        <span>الاجهزة</span>
+                                    </a>
+                                    <div class="sidebar-submenu">
+                                        <ul>
+                                            <li>
+                                                <a href="#">اضافة جهاز جديد
+
+                                                </a>
+                                            </li>
+                                            <li>
+                                                <a href="#">تعديل جهاز </a>
+                                            </li>
+                                            <li>
+                                                <a href="#">بحث عن جهاز </a>
+                                            </li>
+                                        </ul>
+                                    </div>
+                                </li>
+
+                                <li class="sidebar-dropdown">
+                                    <a href="#">
+                                        <i class="far fa-user"></i>
+                                        <span>الموظفين</span>
+                                    </a>
+                                    <div class="sidebar-submenu">
+                                        <ul>
+                                            <li>
+                                                <a href="#">اضافة موظف جديد</a>
+                                            </li>
+                                        </ul>
+                                    </div>
+                                </li>
+
+                                <li class="sidebar-dropdown">
+                                    <a href="#">
+                                        <i class="fas fa-dollar-sign    "></i>
+                                        <span>المبيعات</span>
+                                    </a>
+                                    <div class="sidebar-submenu">
+                                        <ul>
+                                            <li>
+                                                <a href="#">الاحهزة التي تمت صيانتها </a>
+                                            </li>
+                                            <li>
+                                                <a href="#">الأجل </a>
+                                            </li>
+                                        </ul>
+                                    </div>
+                                </li>
+
+                            </ul>
+                        </div>
+                        <!-- sidebar-menu  -->
+                    </div>
+                </nav>
+                <!-- sidebar-wrapper  -->
+            </div>
+        </div>
+    </header>
+    <!-- ========================================================
+    End Main Header-->
+
+    <section class="reqwest py-5">
+        <div class="container">
+            <div class="row">
+                <div class="col-lg-6">
+                    <form action="" class="from-border p-4 mb-5">
+                        <label>بيانات العميل</label>
+                        <input class="w-100 border mt-3 p-2" type="text" placeholder="اسم العميل">
+                        <input class="w-100 border mt-3 p-2" type="text" placeholder="رقم الموبايل">
+                        <div class="d-flex align-items-center">
+                            <span class="w-25 bg-main-color color-whait text-center p-2 mt-3">العميل</span>
+                            <select class="w-100 border mt-3 p-2">
+                                <option value="">دائم</option>
+                                <option value="">غير دائم</option>
+                            </select>
+                        </div>
+                    </form>
+                    <form action="" class="from-border p-4 mb-5">
+                        <label>صيانة الجهاز</label>
+                        <input class="w-100 border mt-3 p-2" type="text" placeholder=" التكلفة">
+                        <div class="d-flex align-items-center">
+                            <span class="w-25 bg-main-color color-whait text-center p-2 mt-3">تاريخ التسليم</span>
+                            <input class="w-75 border mt-3 p-2" id="date" type="date" placeholder="">
+                        </div>
+                        <div class="d-flex align-items-center">
+                            <span class="w-25 bg-main-color color-whait text-center p-2 mt-3">الحالة</span>
+                            <select class="w-75 border mt-3 p-2">
+                                <option value="">تم الرد</option>
+                                <option value="">تم التسليم </option>
+                                <option value="">مفروض</option>
+                            </select>
+                        </div>
+                        <div class="d-flex align-items-center">
+                            <span class="w-25 bg-main-color color-whait text-center p-2 mt-3">حالة الدفع</span>
+                            <select class="w-75 border mt-3 p-2">
+                                <option value="">خالص</option>
+                                <option value="">أجل </option>
+                            </select>
+                        </div>
+                    </form>
+                </div>
+                <div class="col-lg-6">
+                    <form action="" class="from-border p-4 pb-5 mb-5">
+                        <label>بيانات الجهاز</label>
+                        <input class="w-100 border mt-3 p-2" type="text" placeholder="اسم الجهاز">
+                        <input class="w-100 border mt-3 p-2" type="text" placeholder="العطل">
+                        <div class="d-flex align-items-center">
+                            <span class="w-25 bg-main-color color-whait text-center p-2 mt-3"> المسؤل</span>
+                            <select class="w-75 border mt-3 p-2">
+                                <option value="">test</option>
+                                <option value="">test </option>
+                            </select>
+                        </div>
+                        <textarea class="w-100 border mt-3 p-2" name="" id="" cols="30" rows="10"
+                            placeholder="ملاحظات ...."></textarea>
+                    </form>
+                </div>
+                <button class="w-75 mx-auto p-2 border btn btn-success ">
+                    <i class="fa fa-plus mx-2" aria-hidden="true"></i>
+                    إضافة</button>
+            </div>
+        </div>
+    </section>
+
+
+
+    <!-- ================================================
+    Start Main Footer -->
+    <footer class="py-3 footer bg-main-color color-whait bottom">
+        <div class="text-center">
+            <span class="copy-right font-size">Copy Right &copy; 2020 Pnetworkers</span>
+        </div>
+    </footer>
+    <!-- ================================================
+    End Main Footer -->
+
+    <!-- Laibiry-Jquery -->
+    <script src="js/vandors/jquery.js"></script>
+    <!-- Bootstarp -->
+    <script src="js/vandors/bootstrap.min.js"></script>
+    <!-- Main Script -->
+    <script src="js/main.js"></script>
+</body>
+
+</html>
